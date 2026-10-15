@@ -1,12 +1,1007 @@
-// 中文采用韩林合译文；逐句核对来源见 TEXT_SOURCES.md。英文为 Ogden 1922。
+// 99 complete propositions; Chinese: AI experimental translation from German, checked against Ogden.
 window.QUOTES = [
-{id:'5.6',theme:'边界 / GRENZEN',zh:'我的语言的诸界限意味着我的世界的诸界限。',de:'Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.',en:'The limits of my language mean the limits of my world.',note:'这一节进入语言、世界与主体的关系。可以继续读 5.61—5.641，避免把它仅仅理解为词汇量决定眼界。',url:'https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/5'},
-{id:'3',theme:'思想 / GEDANKE',zh:'事实的逻辑图像是思想。',de:'Das logische Bild der Tatsachen ist der Gedanke.',en:'The logical picture of the facts is the thought.',note:'这是第 3 条命题。可以继续阅读 3.001—3.03，理解思想、图像与可能性在这一论证中的关系。',url:'https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3'},
-{id:'7',theme:'沉默 / SCHWEIGEN',zh:'对于不可言说的东西，人们必须以沉默待之。',de:'Wovon man nicht sprechen kann, darüber muss man schweigen.',en:'Whereof one cannot speak, thereof one must be silent.',note:'这是全书的最后一条命题。建议同时阅读序言及 6.54；界面的留白是创作性回应，并不等于对这句话的完整哲学解释。',url:'https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/7'}
+  {
+    "id": "5.6",
+    "topic": "subject",
+    "theme": "主体与边界 / GRENZEN",
+    "zh": "我的语言的界限，意味着我的世界的界限。",
+    "de": "Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.",
+    "en": "The limits of my language mean the limits of my world.",
+    "note": "Grenzen 是复数。中文“界限”不显式区分单复数，但不把它改成词汇量或知识多少的断言。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/5"
+  },
+  {
+    "id": "1",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "世界就是一切实际成立的情况。",
+    "de": "Die Welt ist alles, was der Fall ist.",
+    "en": "The world is everything that is the case.",
+    "note": "“实际发生的情况”试译 was der Fall ist，指实际成立的情况，并不限于时间中发生的事件。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.1",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "世界是事实的总和，而不是物的总和。",
+    "de": "Die Welt ist die Gesamtheit der Tatsachen, nicht der Dinge.",
+    "en": "The world is the totality of facts, not of things.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.11",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "世界由事实所规定，也由这些事实就是全部事实这一点所规定。",
+    "de": "Die Welt ist durch die Tatsachen bestimmt und dadurch, dass es alle Tatsachen sind.",
+    "en": "The world is determined by the facts, and by these being all the facts.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.12",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "因为事实的总和既规定了实际是什么情况，也规定了所有不实际成立的情况。",
+    "de": "Denn, die Gesamtheit der Tatsachen bestimmt, was der Fall ist und auch, was alles nicht der Fall ist.",
+    "en": "For the totality of facts determines both what is the case, and also all that is not the case.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.13",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "逻辑空间中的事实就是世界。",
+    "de": "Die Tatsachen im logischen Raum sind die Welt.",
+    "en": "The facts in logical space are the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.2",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "世界分解为事实。",
+    "de": "Die Welt zerfällt in Tatsachen.",
+    "en": "The world divides into facts.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "1.21",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "任何一件事都可以成立，也可以不成立，而其余一切保持不变。",
+    "de": "Eines kann der Fall sein oder nicht der Fall sein und alles übrige gleich bleiben.",
+    "en": "Any one can either be the case or not be the case, and everything else remain the same.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/1"
+  },
+  {
+    "id": "2",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "实际成立的情况，也就是事实，是事态的存在。",
+    "de": "Was der Fall ist, die Tatsache, ist das Bestehen von Sachverhalten.",
+    "en": "What is the case, the fact, is the existence of atomic facts.",
+    "note": "Sachverhalt 统一译为“事态”；Ogden 在这里译为 atomic fact。不要据此把 Tatsache（事实）与 Sachverhalt 混为同一个术语。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.01",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "事态是对象的结合。（事物、物的结合。）",
+    "de": "Der Sachverhalt ist eine Verbindung von Gegenständen. (Sachen, Dingen.)",
+    "en": "An atomic fact is a combination of objects (entities, things).",
+    "note": "Gegenstand 译为“对象”；括号中的 Sache、Ding 在此试译为“事物、物”。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.012",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "在逻辑中，没有什么是偶然的：如果一个物能够出现在某个事态中，那么这种事态的可能性就必定已经在这个物中预先确定了。",
+    "de": "In der Logik ist nichts zufällig: Wenn das Ding im Sachverhalt vorkommen kann, so muss die Möglichkeit des Sachverhaltes im Ding bereits präjudiziert sein.",
+    "en": "In logic nothing is accidental: if a thing can occur in an atomic fact the possibility of that atomic fact must already be prejudged in the thing.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.0141",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "对象能够出现在事态中的可能性，就是对象的形式。",
+    "de": "Die Möglichkeit seines Vorkommens in Sachverhalten, ist die Form des Gegenstandes.",
+    "en": "The possibility of its occurrence in atomic facts is the form of the object.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.02",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "对象是简单的。",
+    "de": "Der Gegenstand ist einfach.",
+    "en": "The object is simple.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.021",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "对象构成世界的实体。因此，对象不可能是复合的。",
+    "de": "Die Gegenstände bilden die Substanz der Welt. Darum können sie nicht zusammengesetzt sein.",
+    "en": "Objects form the substance of the world. Therefore they cannot be compound.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.024",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "实体是独立于实际情况而存在的东西。",
+    "de": "Die Substanz ist das, was unabhängig von dem was der Fall ist, besteht.",
+    "en": "Substance is what exists independently of what is the case.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.0251",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "空间、时间和颜色（有色性）是对象的形式。",
+    "de": "Raum, Zeit und Farbe (Färbigkeit) sind Formen der Gegenstände.",
+    "en": "Space, time and colour (colouredness) are forms of objects.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.026",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "只有存在对象，世界才可能有一种固定的形式。",
+    "de": "Nur wenn es Gegenstände gibt, kann es eine feste Form der Welt geben.",
+    "en": "Only if there are objects can there be a fixed form of the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.0271",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "对象是固定的、持存的；对象的配置则是变化的、不稳定的。",
+    "de": "Der Gegenstand ist das Feste, Bestehende; die Konfiguration ist das Wechselnde, Unbeständige.",
+    "en": "The object is the fixed, the existent; the configuration is the changing, the variable.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.03",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "在事态中，对象像链条的各个环节那样相互扣连。",
+    "de": "Im Sachverhalt hängen die Gegenstände ineinander, wie die Glieder einer Kette.",
+    "en": "In the atomic fact objects hang one in another, like the members of a chain.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.033",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "形式是结构的可能性。",
+    "de": "Die Form ist die Möglichkeit der Struktur.",
+    "en": "The form is the possibility of the structure.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.04",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "存在着的事态的总和就是世界。",
+    "de": "Die Gesamtheit der bestehenden Sachverhalte ist die Welt.",
+    "en": "The totality of existent atomic facts is the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.061",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "各个事态彼此独立。",
+    "de": "Die Sachverhalte sind von einander unabhängig.",
+    "en": "Atomic facts are independent of one another.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.062",
+    "topic": "world",
+    "theme": "世界与事实 / WELT",
+    "zh": "不能从一个事态存在或不存在，推断出另一个事态存在或不存在。",
+    "de": "Aus dem Bestehen oder Nichtbestehen eines Sachverhaltes kann nicht auf das Bestehen oder Nichtbestehen eines anderen geschlossen werden.",
+    "en": "From the existence or non-existence of an atomic fact we cannot infer the existence or non-existence of another.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.1",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "我们为自己制作事实的图像。",
+    "de": "Wir machen uns Bilder der Tatsachen.",
+    "en": "We make to ourselves pictures of facts.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.12",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像是现实的模型。",
+    "de": "Das Bild ist ein Modell der Wirklichkeit.",
+    "en": "The picture is a model of reality.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.141",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像是一个事实。",
+    "de": "Das Bild ist eine Tatsache.",
+    "en": "The picture is a fact.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.1511",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像就这样与现实相连；它一直延伸到现实。",
+    "de": "Das Bild ist so mit der Wirklichkeit verknüpft; es reicht bis zu ihr.",
+    "en": "Thus the picture is linked with reality; it reaches up to it.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.1512",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "它就像一把贴在现实上的标尺。",
+    "de": "Es ist wie ein Massstab an die Wirklichkeit angelegt.",
+    "en": "It is like a scale applied to reality.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.1515",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "这些对应关系仿佛是图像元素的触须，图像借它们接触现实。",
+    "de": "Diese Zuordnungen sind gleichsam die Fühler der Bildelemente, mit denen das Bild die Wirklichkeit berührt.",
+    "en": "These co-ordinations are as it were the feelers of its elements with which the picture touches reality.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.16",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "一个事实要成为图像，就必须与它所描绘的东西有所共同。",
+    "de": "Die Tatsache muss um Bild zu sein, etwas mit dem Abgebildeten gemeinsam haben.",
+    "en": "In order to be a picture a fact must have something in common with what it pictures.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.172",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "然而，图像无法描绘它自身的描绘形式；它把这种形式显示出来。",
+    "de": "Seine Form der Abbildung aber, kann das Bild nicht abbilden; es weist sie auf.",
+    "en": "The picture, however, cannot represent its form of representation; it shows it forth.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.174",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "但图像不能置身于它的表现形式之外。",
+    "de": "Das Bild kann sich aber nicht ausserhalb seiner Form der Darstellung stellen.",
+    "en": "But the picture cannot place itself outside of its form of representation.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.19",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "逻辑图像能够描绘世界。",
+    "de": "Das logische Bild kann die Welt abbilden.",
+    "en": "The logical picture can depict the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.202",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像表现逻辑空间中一种可能的情形。",
+    "de": "Das Bild stellt eine mögliche Sachlage im logischen Raume dar.",
+    "en": "The picture represents a possible state of affairs in logical space.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.21",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像与现实或者相符，或者不符；它或者正确，或者不正确，或者真，或者假。",
+    "de": "Das Bild stimmt mit der Wirklichkeit überein oder nicht; es ist richtig oder unrichtig, wahr oder falsch.",
+    "en": "The picture agrees with reality or not; it is right or wrong, true or false.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.221",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像所表现的，就是它的意义。",
+    "de": "Was das Bild darstellt, ist sein Sinn.",
+    "en": "What the picture represents is its sense.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.222",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "图像为真或为假，就在于它的意义与现实相符或不相符。",
+    "de": "In der Übereinstimmung oder Nichtübereinstimmung seines Sinnes mit der Wirklichkeit, besteht seine Wahrheit oder Falschheit.",
+    "en": "In the agreement or disagreement of its sense with reality, its truth or falsity consists.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.223",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "要知道图像是真是假，我们必须将它与现实比较。",
+    "de": "Um zu erkennen, ob das Bild wahr oder falsch ist, müssen wir es mit der Wirklichkeit vergleichen.",
+    "en": "In order to discover whether the picture is true or false we must compare it with reality.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.224",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "仅凭图像本身，无法知道它是真是假。",
+    "de": "Aus dem Bild allein ist nicht zu erkennen, ob es wahr oder falsch ist.",
+    "en": "It cannot be discovered from the picture alone whether it is true or false.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "2.225",
+    "topic": "image",
+    "theme": "图像与现实 / BILD",
+    "zh": "不存在先验地为真的图像。",
+    "de": "Ein a priori wahres Bild gibt es nicht.",
+    "en": "There is no picture which is a priori true.",
+    "note": "a priori 译为“先验地”，指判断并不依赖与现实的经验比较。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/2"
+  },
+  {
+    "id": "3",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "事实的逻辑图像，就是思想。",
+    "de": "Das logische Bild der Tatsachen ist der Gedanke.",
+    "en": "The logical picture of the facts is the thought.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.001",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "“一个事态是可思的”，就是说：我们能够为自己制作它的图像。",
+    "de": "„Ein Sachverhalt ist denkbar“ heisst: Wir können uns ein Bild von ihm machen.",
+    "en": "“An atomic fact is thinkable”—means: we can imagine it.",
+    "note": "德语说的是“为自己制作图像”；Ogden 在此用 imagine。中文保留德语中的图像措辞。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.01",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "为真的思想的总和，是世界的一幅图像。",
+    "de": "Die Gesamtheit der wahren Gedanken sind ein Bild der Welt.",
+    "en": "The totality of true thoughts is a picture of the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.03",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "我们无法思考不合逻辑的东西，否则我们就必须不合逻辑地思考。",
+    "de": "Wir können nichts Unlogisches denken, weil wir sonst unlogisch denken müssten.",
+    "en": "We cannot think anything unlogical, for otherwise we should have to think unlogically.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.04",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "一个先验地正确的思想，应当是这样一种思想：它的可能性就能保证它为真。",
+    "de": "Ein a priori richtiger Gedanke wäre ein solcher, dessen Möglichkeit seine Wahrheit bedingte.",
+    "en": "An a priori true thought would be one whose possibility guaranteed its truth.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.05",
+    "topic": "thought",
+    "theme": "思想与可能 / GEDANKE",
+    "zh": "只有当一个思想是否为真能够从思想本身被认识到（无需比较对象）时，我们才能先验地知道它为真。",
+    "de": "Nur so könnten wir a priori wissen, dass ein Gedanke wahr ist, wenn aus dem Gedanken selbst (ohne Vergleichsobjekt) seine Wahrheit zu erkennen wäre.",
+    "en": "We could only know a priori that a thought is true if its truth was to be recognized from the thought itself (without an object of comparison).",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.1",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "在命题中，思想以感官可感知的方式表达出来。",
+    "de": "Im Satz drückt sich der Gedanke sinnlich wahrnehmbar aus.",
+    "en": "In the proposition the thought is expressed perceptibly through the senses.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.12",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "我把我们用来表达思想的记号称为命题记号。而命题，就是处于对世界的投射关系之中的命题记号。",
+    "de": "Das Zeichen, durch welches wir den Gedanken ausdrücken, nenne ich das Satzzeichen. Und der Satz ist das Satzzeichen in seiner projektiven Beziehung zur Welt.",
+    "en": "The sign through which we express the thought I call the propositional sign. And the proposition is the propositional sign in its projective relation to the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.141",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题不是词语的混合物。——正如音乐主题不是音符的混合物。命题有其分节结构。",
+    "de": "Der Satz ist kein Wörtergemisch.—(Wie das musikalische Thema kein Gemisch von Tönen.) Der Satz ist artikuliert.",
+    "en": "The proposition is not a mixture of words (just as the musical theme is not a mixture of tones). The proposition is articulate.",
+    "note": "artikuliert 试译为“有其分节结构”，强调命题内部的组织，不能只理解为发音清晰。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.142",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "只有事实能够表达意义；一类名称不能。",
+    "de": "Nur Tatsachen können einen Sinn ausdrücken, eine Klasse von Namen kann es nicht.",
+    "en": "Only facts can express a sense, a class of names cannot.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.221",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "对象，我只能为之命名。记号代表对象。我只能谈论它们，却不能把它们本身说出来。命题只能说一个物是怎样的，而不能说它是什么。",
+    "de": "Die Gegenstände kann ich nur nennen. Zeichen vertreten sie. Ich kann nur von ihnen sprechen, sie aussprechen kann ich nicht. Ein Satz kann nur sagen, wie ein Ding ist, nicht was es ist.",
+    "en": "Objects I can only name. Signs represent them. I can only speak of them. I cannot assert them. A proposition can only say how a thing is, not what it is.",
+    "note": "“把对象本身说出来”保留德语 aussprechen 的困难措辞；需结合此前关于名称和对象的讨论阅读。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.3",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "只有命题才有意义；只有在命题的关联中，名称才有所指。",
+    "de": "Nur der Satz hat Sinn; nur im Zusammenhange des Satzes hat ein Name Bedeutung.",
+    "en": "Only the proposition has sense; only in the context of a proposition has a name meaning.",
+    "note": "Sinn 统一译为“意义”，Bedeutung 译为“所指”；这一处理用于保留名称指称与命题意义的区别。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.326",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "要从记号中辨认出符号，就必须注意它有意义的使用。",
+    "de": "Um das Symbol am Zeichen zu erkennen, muss man auf den sinnvollen Gebrauch achten.",
+    "en": "In order to recognize the symbol in the sign we must consider the significant use.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "3.328",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "如果一个记号没有被使用，它就没有所指。这就是奥卡姆格言的意思。（如果一切都表现得仿佛某个记号有所指，那么它也就有所指。）",
+    "de": "Wird ein Zeichen nicht gebraucht, so ist es bedeutungslos. Das ist der Sinn der Devise Occams. (Wenn sich alles so verhält als hätte ein Zeichen Bedeutung, dann hat es auch Bedeutung.)",
+    "en": "If a sign is not necessary then it is meaningless. That is the meaning of Occam's razor. (If everything in the symbolism works as though a sign had meaning, then it has meaning.)",
+    "note": "中文据德语“没有被使用”翻译；Ogden 译为“not necessary”。两者措辞差异在这里保留，不将英译直接回译成中文。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/3"
+  },
+  {
+    "id": "4",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "思想就是有意义的命题。",
+    "de": "Der Gedanke ist der sinnvolle Satz.",
+    "en": "The thought is the significant proposition.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.001",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题的总和就是语言。",
+    "de": "Die Gesamtheit der Sätze ist die Sprache.",
+    "en": "The totality of propositions is the language.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.0031",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "一切哲学都是“语言批判”。（不过，并不是毛特纳所说的那种意义上的语言批判。）罗素的功绩在于指出：命题表面的逻辑形式，不一定就是它真正的逻辑形式。",
+    "de": "Alle Philosophie ist „Sprachkritik“. (Allerdings nicht im Sinne Mauthners.) Russell's Verdienst ist es, gezeigt zu haben, dass die scheinbare logische Form des Satzes nicht seine wirkliche sein muss.",
+    "en": "All philosophy is “Critique of language” (but not at all in Mauthner's sense). Russell's merit is to have shown that the apparent logical form of the proposition need not be its real form.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.01",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题是现实的一幅图像。命题是我们所设想的现实的一个模型。",
+    "de": "Der Satz ist ein Bild der Wirklichkeit. Der Satz ist ein Modell der Wirklichkeit, so wie wir sie uns denken.",
+    "en": "The proposition is a picture of reality. The proposition is a model of the reality as we think it is.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.021",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题是现实的一幅图像：因为，只要我理解这个命题，我就知道它所表现的情形。而我理解这个命题，并不需要有人先向我解释它的意义。",
+    "de": "Der Satz ist ein Bild der Wirklichkeit: Denn ich kenne die von ihm dargestellte Sachlage, wenn ich den Satz verstehe. Und den Satz verstehe ich, ohne dass mir sein Sinn erklärt wurde.",
+    "en": "The proposition is a picture of reality, for I know the state of affairs presented by it, if I understand the proposition. And I understand the proposition, without its sense having been explained to me.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.022",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题显示它的意义。命题显示：如果它为真，情况是怎样的。而它断言：情况确实如此。",
+    "de": "Der Satz zeigt seinen Sinn. Der Satz zeigt, wie es sich verhält, wenn er wahr ist. Und er sagt, dass es sich so verhält.",
+    "en": "The proposition shows its sense. The proposition shows how things stand, if it is true. And it says, that they do so stand.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.024",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "理解一个命题，就是知道：如果它为真，实际是什么情况。（所以，人可以理解它，却不知道它是否为真。）只要理解了它的组成部分，就理解了它。",
+    "de": "Einen Satz verstehen, heisst, wissen was der Fall ist, wenn er wahr ist. (Man kann ihn also verstehen, ohne zu wissen, ob er wahr ist.) Man versteht ihn, wenn man seine Bestandteile versteht.",
+    "en": "To understand a proposition means to know what is the case, if it is true. (One can therefore understand it without knowing whether it is true or not.) One understands it if one understands its constituent parts.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.03",
+    "topic": "language",
+    "theme": "语言与意义 / SPRACHE",
+    "zh": "命题必须用旧的表达式传达新的意义。命题向我们传达一种情形，因此它必定在本质上与这种情形相联。而这种联系恰在于：命题是它的逻辑图像。命题只有作为图像，才有所陈述。",
+    "de": "Ein Satz muss mit alten Ausdrücken einen neuen Sinn mitteilen. Der Satz teilt uns eine Sachlage mit, also muss er wesentlich mit der Sachlage zusammenhängen. Und der Zusammenhang ist eben, dass er ihr logisches Bild ist. Der Satz sagt nur insoweit etwas aus, als er ein Bild ist.",
+    "en": "A proposition must communicate a new sense with old words. The proposition communicates to us a state of affairs, therefore it must be essentially connected with the state of affairs. And the connexion is, in fact, that it is its logical picture. The proposition only asserts something, in so far as it is a picture.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.11",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "所有真命题的总和，就是整个自然科学（或所有自然科学的总和）。",
+    "de": "Die Gesamtheit der wahren Sätze ist die gesamte Naturwissenschaft (oder die Gesamtheit der Naturwissenschaften).",
+    "en": "The totality of true propositions is the total natural science (or the totality of the natural sciences).",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.111",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "哲学不是自然科学中的一门。（“哲学”这个词，必须表示某种处在自然科学之上或之下、却不与它们并列的东西。）",
+    "de": "Die Philosophie ist keine der Naturwissenschaften. (Das Wort „Philosophie“ muss etwas bedeuten, was über oder unter, aber nicht neben den Naturwissenschaften steht.)",
+    "en": "Philosophy is not one of the natural sciences. (The word “philosophy” must mean something which stands above or below, but not beside the natural sciences.)",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.112",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "哲学的目的是从逻辑上澄清思想。哲学不是一套学说，而是一种活动。哲学著作本质上由阐明构成。哲学的结果不是“哲学命题”，而是命题变得清楚。哲学应当使那些原本仿佛混浊而模糊的思想变得清楚，并划出鲜明的界限。",
+    "de": "Der Zweck der Philosophie ist die logische Klärung der Gedanken. Die Philosophie ist keine Lehre, sondern eine Tätigkeit. Ein philosophisches Werk besteht wesentlich aus Erläuterungen. Das Resultat der Philosophie sind nicht „philosophische Sätze“, sondern das Klarwerden von Sätzen. Die Philosophie soll die Gedanken, die sonst, gleichsam, trübe und verschwommen sind, klar machen und scharf abgrenzen.",
+    "en": "The object of philosophy is the logical clarification of thoughts. Philosophy is not a theory but an activity. A philosophical work consists essentially of elucidations. The result of philosophy is not a number of “philosophical propositions”, but to make propositions clear. Philosophy should make clear and delimit sharply the thoughts which otherwise are, as it were, opaque and blurred.",
+    "note": "Lehre 译为“一套学说”，Tätigkeit 译为“一种活动”。保留整个命题，避免只摘取其中一句。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.113",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "哲学为自然科学中可争论的领域划定界限。",
+    "de": "Die Philosophie begrenzt das bestreitbare Gebiet der Naturwissenschaft.",
+    "en": "Philosophy limits the disputable sphere of natural science.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.114",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "哲学应当划定可思之物的界限，并由此划定不可思之物的界限。它应当借助可思之物，从内部为不可思之物划界。",
+    "de": "Sie soll das Denkbare abgrenzen und damit das Undenkbare. Sie soll das Undenkbare von innen durch das Denkbare begrenzen.",
+    "en": "It should limit the thinkable and thereby the unthinkable. It should limit the unthinkable from within through the thinkable.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.115",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "哲学通过清楚地呈现可说之物，来指示不可说之物。",
+    "de": "Sie wird das Unsagbare bedeuten, indem sie das Sagbare klar darstellt.",
+    "en": "It will mean the unspeakable by clearly displaying the speakable.",
+    "note": "此处 bedeuten 试译为“指示”，而非套用名称语境中的“有所指”；哲学在本句中是承接前文的主语。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.116",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "凡是能够被思考的，都能够被清楚地思考。凡是能够说出来的，都能够被清楚地说出来。",
+    "de": "Alles was überhaupt gedacht werden kann, kann klar gedacht werden. Alles was sich aussprechen lässt, lässt sich klar aussprechen.",
+    "en": "Everything that can be thought at all can be thought clearly. Everything that can be said can be said clearly.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "4.1212",
+    "topic": "philosophy",
+    "theme": "哲学与澄清 / PHILOSOPHIE",
+    "zh": "能够显示出来的，不能被说出来。",
+    "de": "Was gezeigt werden kann, kann nicht gesagt werden.",
+    "en": "What can be shown cannot be said.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/4"
+  },
+  {
+    "id": "5.621",
+    "topic": "subject",
+    "theme": "主体与边界 / GRENZEN",
+    "zh": "世界与生命是一体的。",
+    "de": "Die Welt und das Leben sind Eins.",
+    "en": "The world and life are one.",
+    "note": "Leben 可涉及生命、生活；此处试译为“生命”。不能仅当作一般的人生格言。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/5"
+  },
+  {
+    "id": "5.632",
+    "topic": "subject",
+    "theme": "主体与边界 / GRENZEN",
+    "zh": "主体不属于世界，而是世界的一个界限。",
+    "de": "Das Subjekt gehört nicht zur Welt, sondern es ist eine Grenze der Welt.",
+    "en": "The subject does not belong to the world but it is a limit of the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/5"
+  },
+  {
+    "id": "5.633",
+    "topic": "subject",
+    "theme": "主体与边界 / GRENZEN",
+    "zh": "在世界中的什么地方，可以察觉到一个形而上学主体？你说，这里的关系就像眼睛与视野。但你确实看不到那只眼睛。视野中的任何东西，也都不能让人推断出它正被一只眼睛看着。",
+    "de": "Wo in der Welt ist ein metaphysisches Subjekt zu merken? Du sagst, es verhält sich hier ganz, wie mit Auge und Gesichtsfeld. Aber das Auge siehst du wirklich nicht. Und nichts am Gesichtsfeld lässt darauf schliessen, dass es von einem Auge gesehen wird.",
+    "en": "Where in the world is a metaphysical subject to be noted? You say that this case is altogether like that of the eye and the field of sight. But you do not really see the eye. And from nothing in the field of sight can it be concluded that it is seen from an eye.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/5"
+  },
+  {
+    "id": "6.1251",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "因此，逻辑中也绝不可能有意外。",
+    "de": "Darum kann es in der Logik auch nie Überraschungen geben.",
+    "en": "Hence there can never be surprises in logic.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.1261",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "在逻辑中，过程与结果等价。（因此没有意外。）",
+    "de": "In der Logik sind Prozess und Resultat äquivalent. (Darum keine Überraschung.)",
+    "en": "In logic process and result are equivalent. (Therefore no surprises.)",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.13",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "逻辑不是一套学说，而是世界的一幅镜像。逻辑是超越论的。",
+    "de": "Die Logik ist keine Lehre, sondern ein Spiegelbild der Welt. Die Logik ist transcendental.",
+    "en": "Logic is not a theory but a reflexion of the world. Logic is transcendental.",
+    "note": "transcendental 试译为“超越论的”，与 a priori 的“先验地”作文字区分；这一译法仍需专业审校。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.234",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "数学是逻辑的一种方法。",
+    "de": "Die Mathematik ist eine Methode der Logik.",
+    "en": "Mathematics is a method of logic.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.3431",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "穿过全部逻辑装置，物理定律所谈论的依然是世界中的对象。",
+    "de": "Durch den ganzen logischen Apparat hindurch sprechen die physikalischen Gesetze doch von den Gegenständen der Welt.",
+    "en": "Through the whole apparatus of logic the physical laws still speak of the objects of the world.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.362",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "凡是能够被描述的，也都能够发生；而因果律理应排除的东西，也就无法被描述。",
+    "de": "Was sich beschreiben lässt, das kann auch geschehen, und was das Kausalitätsgesetz ausschliessen soll, das lässt sich auch nicht beschreiben.",
+    "en": "What can be described can happen too, and what is excluded by the law of causality cannot be described.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.36311",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "太阳明天将会升起，这是一个假说；这就是说：我们不知道它是否会升起。",
+    "de": "Dass die Sonne morgen aufgehen wird, ist eine Hypothese; und das heisst: wir wissen nicht, ob sie aufgehen wird.",
+    "en": "That the sun will rise to-morrow, is an hypothesis; and that means that we do not know whether it will rise.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.37",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "不存在这样一种强制：因为某件事发生了，另一件事就必须发生。只有逻辑上的必然性。",
+    "de": "Einen Zwang, nach dem Eines geschehen müsste, weil etwas anderes geschehen ist, gibt es nicht. Es gibt nur eine logische Notwendigkeit.",
+    "en": "A necessity for one thing to happen because another has happened does not exist. There is only logical necessity.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.371",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "整个现代世界观的基础，是这样一种错觉：以为所谓自然定律，就是对自然现象的解释。",
+    "de": "Der ganzen modernen Weltanschauung liegt die Täuschung zugrunde, dass die sogenannten Naturgesetze die Erklärungen der Naturerscheinungen seien.",
+    "en": "At the basis of the whole modern view of the world lies the illusion that the so-called laws of nature are the explanations of natural phenomena.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.373",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "世界独立于我的意志。",
+    "de": "Die Welt ist unabhängig von meinem Willen.",
+    "en": "The world is independent of my will.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.375",
+    "topic": "logic",
+    "theme": "逻辑与科学 / LOGIK",
+    "zh": "正如只有逻辑上的必然性，也只有逻辑上的不可能性。",
+    "de": "Wie es nur eine logische Notwendigkeit gibt, so gibt es auch nur eine logische Unmöglichkeit.",
+    "en": "As there is only a logical necessity, so there is only a logical impossibility.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.4",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "所有命题都具有同等价值。",
+    "de": "Alle Sätze sind gleichwertig.",
+    "en": "All propositions are of equal value.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.42",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "因此，也不可能有伦理学的命题。命题不能表达更高的东西。",
+    "de": "Darum kann es auch keine Sätze der Ethik geben. Sätze können nichts Höheres ausdrücken.",
+    "en": "Hence also there can be no ethical propositions. Propositions cannot express anything higher.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.421",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "显然，伦理无法被说出来。伦理是超越论的。（伦理与美学是一体的。）",
+    "de": "Es ist klar, dass sich die Ethik nicht aussprechen lässt. Die Ethik ist transcendental. (Ethik und Aesthetik sind Eins.)",
+    "en": "It is clear that ethics cannot be expressed. Ethics are transcendental. (Ethics and æsthetics are one.)",
+    "note": "transcendental 与 6.13 一样试译为“超越论的”。这里没有把伦理理解为一组可陈述的事实命题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.431",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "正如在死亡中，世界并不是改变，而是终止。",
+    "de": "Wie auch beim Tod die Welt sich nicht ändert, sondern aufhört.",
+    "en": "As in death, too, the world does not change, but ceases.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.4311",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "死亡不是生命中的一个事件。人并不经历死亡。如果永恒不是指无限延续的时间，而是无时间性，那么，活在当下的人就永恒地活着。我们的生命之无尽，正如我们的视野之无界。",
+    "de": "Der Tod ist kein Ereignis des Lebens. Den Tod erlebt man nicht. Wenn man unter Ewigkeit nicht unendliche Zeitdauer, sondern Unzeitlichkeit versteht, dann lebt der ewig, der in der Gegenwart lebt. Unser Leben ist ebenso endlos, wie unser Gesichtsfeld grenzenlos ist.",
+    "en": "Death is not an event of life. Death is not lived through. If by eternity is understood not endless temporal duration but timelessness, then he lives eternally who lives in the present. Our life is endless in the way that our visual field is without limit.",
+    "note": "unzeitlich 译为“无时间性”，保留它与时间无限延长之间的区别；本条为完整命题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.4321",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "事实都只属于问题，而不属于解答。",
+    "de": "Die Tatsachen gehören alle nur zur Aufgabe, nicht zur Lösung.",
+    "en": "The facts all belong only to the task and not to its performance.",
+    "note": "Aufgabe / Lösung 译为“问题 / 解答”；Ogden 使用 task / performance，中文依据德语选择措辞。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.44",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "神秘之处不在于世界是怎样的，而在于它存在。",
+    "de": "Nicht wie die Welt ist, ist das Mystische, sondern dass sie ist.",
+    "en": "Not how the world is, is the mystical, but that it is.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.45",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "从永恒的视角观照世界，就是将世界作为一个有界的整体来观照。将世界感受为一个有界的整体，这种感受就是神秘的。",
+    "de": "Die Anschauung der Welt sub specie aeterni ist ihre Anschauung als—begrenztes—Ganzes. Das Gefühl der Welt als begrenztes Ganzes ist das mystische.",
+    "en": "The contemplation of the world sub specie aeterni is its contemplation as a limited whole. The feeling of the world as a limited whole is the mystical feeling.",
+    "note": "sub specie aeterni 试译为“从永恒的视角”；这是原文保留的拉丁语表达。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.5",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "对于一个无法说出的回答，相应的问题也无法说出。谜并不存在。如果一个问题能够被提出，它也就能够被回答。",
+    "de": "Zu einer Antwort, die man nicht aussprechen kann, kann man auch die Frage nicht aussprechen. Das Rätsel gibt es nicht. Wenn sich eine Frage überhaupt stellen lässt, so kann sie auch beantwortet werden.",
+    "en": "For an answer which cannot be expressed the question too cannot be expressed. The riddle does not exist. If a question can be put at all, then it can also be answered.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.51",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "当怀疑论试图在无法提问的地方表示怀疑时，它并非不可反驳，而是明显地不成其义。因为，只有存在问题的地方才可能有怀疑；只有存在回答的地方才有问题；而只有能够说出某种东西的地方，才有回答。",
+    "de": "Skeptizismus ist nicht unwiderleglich, sondern offenbar unsinnig, wenn er bezweifeln will, wo nicht gefragt werden kann. Denn Zweifel kann nur bestehen, wo eine Frage besteht; eine Frage nur, wo eine Antwort besteht, und diese nur, wo etwas gesagt werden kann.",
+    "en": "Scepticism is not irrefutable, but palpably senseless, if it would doubt where a question cannot be asked. For doubt can only exist where there is a question; a question only where there is an answer, and this only where something can be said.",
+    "note": "unsinnig 试译为“不成其义”，与 sinnlos 等术语不简单混同。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.52",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "我们感到：即使一切可能的科学问题都已得到回答，我们的人生问题仍然完全没有被触及。当然，那时也就不再剩下任何问题；而这恰恰就是回答。",
+    "de": "Wir fühlen, dass selbst, wenn alle möglichen wissenschaftlichen Fragen beantwortet sind, unsere Lebensprobleme noch gar nicht berührt sind. Freilich bleibt dann eben keine Frage mehr; und eben dies ist die Antwort.",
+    "en": "We feel that even if all possible scientific questions be answered, the problems of life have still not been touched at all. Of course there is then no question left, and just this is the answer.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.521",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "人生问题的解决，表现为这个问题的消失。（这是否就是原因：那些在长久怀疑之后明白了人生意义的人，却无法说出这种意义究竟是什么？）",
+    "de": "Die Lösung des Problems des Lebens merkt man am Verschwinden dieses Problems. (Ist nicht dies der Grund, warum Menschen, denen der Sinn des Lebens nach langen Zweifeln klar wurde, warum diese dann nicht sagen konnten, worin dieser Sinn bestand.)",
+    "en": "The solution of the problem of life is seen in the vanishing of this problem. (Is not this the reason why men to whom after long doubting the sense of life became clear, could not then say wherein this sense consisted?)",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.522",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "确实存在不可言说的东西。它显示自身；它就是神秘的。",
+    "de": "Es gibt allerdings Unaussprechliches. Dies zeigt sich, es ist das Mystische.",
+    "en": "There is indeed the inexpressible. This shows itself; it is the mystical.",
+    "note": "此条为完整编号命题。请结合前后条目阅读；主题分类仅供浏览，不代表作者原有的章节标题。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "6.54",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "我的命题以这样的方式作出阐明：理解我的人，在借助它们——踏着它们——超越它们之后，最终认出它们不成其义。（可以说，他爬上梯子之后，就必须把梯子扔掉。）他必须超越这些命题，才能正确地看待世界。",
+    "de": "Meine Sätze erläutern dadurch, dass sie der, welcher mich versteht, am Ende als unsinnig erkennt, wenn er durch sie—auf ihnen—über sie hinausgestiegen ist. (Er muss sozusagen die Leiter wegwerfen, nachdem er auf ihr hinaufgestiegen ist.) Er muss diese Sätze überwinden, dann sieht er die Welt richtig.",
+    "en": "My propositions are elucidatory in this way: he who understands me finally recognizes them as senseless, when he has climbed out through them, on them, over them. (He must so to speak throw away the ladder, after he has climbed up on it.) He must surmount these propositions; then he sees the world rightly.",
+    "note": "unsinnig 试译为“不成其义”。本条也要求读者反过来审视全书的命题，不能把语录卡片当作最终教条。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/6"
+  },
+  {
+    "id": "7",
+    "topic": "life",
+    "theme": "生命与沉默 / LEBEN",
+    "zh": "对于无法谈论的，必须保持沉默。",
+    "de": "Wovon man nicht sprechen kann, darüber muss man schweigen.",
+    "en": "Whereof one cannot speak, thereof one must be silent.",
+    "note": "本条位于全书结尾；请同时阅读 6.54。中文为 AI 实验译文，不采用既有中文出版译本。",
+    "url": "https://en.wikisource.org/wiki/Tractatus_Logico-Philosophicus/7"
+  }
 ];
-
-const EDITIONS={
-zh:{short:'中文 · 韩林合译 / 商务印书馆',full:'中文｜韩林合译，《维特根斯坦文集》第 2 卷《逻辑哲学论》，商务印书馆，2019，ISBN 9787100164610。当前为三条简短摘引。第 3、7 条据馆藏目录核对；5.6 据韩林合本人在《学术月刊》2025 年第 9 期访谈中的引文核对，尚未逐页核验该印本。'},
-de:{short:'德语 · 原文 / 1922 德英对照版',full:'德语｜Ludwig Wittgenstein，《Tractatus Logico-Philosophicus》，1922 年德英对照版原文。第 7 条的旧拼写 muß 在界面规范为 muss。'},
-en:{short:'英文 · C. K. Ogden / 1922',full:'英文｜C. K. Ogden 译，协同 F. P. Ramsey；《Tractatus Logico-Philosophicus》，London: Kegan Paul, Trench, Trubner & Co., Ltd., 1922。在线核对来源：Wikisource 德英对照本。'}
+const EDITIONS = {
+  "zh": {
+    "short": "中文 · AI 实验译文 / 未经专业审校",
+    "full": "中文｜本项目由 OpenAI AI 助手依据德语原文试译，并参考 C. K. Ogden 1922 年英译校对句法和含义。不采用、也不署名为韩林合或其他既有中文译本。译文及译注未经专业审校，不替代正式学术译本。短句可能与通行译法相同。"
+  },
+  "de": {
+    "short": "德语 · 原文 / 1922 德英对照版",
+    "full": "德语｜Ludwig Wittgenstein, Tractatus Logico-Philosophicus，1922 年德英对照版；电子底本为 Project Gutenberg #5740（2025-05-31 更新）。完整保留所选命题，去掉排版强调、分页和第 1 条的编号说明脚注；不改变正文措辞。"
+  },
+  "en": {
+    "short": "英文 · C. K. Ogden / 1922",
+    "full": "英文｜C. K. Ogden，协同 F. P. Ramsey，1922 年译本；电子底本 Project Gutenberg #5740。保留早期英译中的措辞，不混入后来的 Pears / McGuinness 译本。仅移除排版标记及第 1 条的编号说明脚注。"
+  }
 };
